@@ -4,8 +4,8 @@
 # include <iostream>
 # include <string>
 # include <exception>
-# include "Form.hpp"
 
+class	Form;
 
 class	Bureaucrat
 {
@@ -40,7 +40,7 @@ class	Bureaucrat
 				const char	*what() const throw();
 		};
 
-		void	signForm();
+		void	signForm(Form &form);
 };
 
 std::ostream	&operator<<(std::ostream &out, const Bureaucrat &bureau);
